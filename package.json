@@ -17,8 +17,8 @@
   "scripts": {
     "dev": "parcel ./src/index.html",
     "start": "serve -s -p 1234 dist",
-    "build": "parcel build",
-    "deploy": "gh-pages -d dist",
+    "build": "parcel build --public-url ./",
+    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist",
     "lint": "eslint ./src",
     "format": "prettier --check './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "test:unit": "jest",
