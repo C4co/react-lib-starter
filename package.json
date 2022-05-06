@@ -21,7 +21,7 @@
     "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist",
     "lint": "eslint ./src",
     "format": "prettier --check './src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "test:unit": "jest",
+    "test:unit": "jest --coverage",
     "test:e2e": "cypress open",
     "test:e2e:headless": "cypress run",
     "test:ci": "start-server-and-test start http://localhost:1234 test:e2e:headless",

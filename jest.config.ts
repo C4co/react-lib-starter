@@ -1,6 +1,7 @@
 const jestConfig = {
   collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
+    './src/components/**/*.{js,jsx,ts,tsx}',
+    '!./src/components/index.ts',
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
