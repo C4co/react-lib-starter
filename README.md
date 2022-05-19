@@ -48,7 +48,7 @@ start a server and run e2e tests
 npm run test:ci
 ```
 
-check and test more build and formats
+running all tests and checks
 
 ```
 npm run test:full
